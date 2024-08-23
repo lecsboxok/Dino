@@ -1,3 +1,4 @@
+/* RESET */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,8 +9,18 @@
 a {
     text-decoration: none;
 }
+/* FONTES */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
 
+@font-face {
+    font-family: 'Limelight';
+    src: url(fonts/Limelight/Limelight-Regular.ttf);
+}
 
+/* CABEÇALHO */
 #header {
     background-color: #296B45;
 }
