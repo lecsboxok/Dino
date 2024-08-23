@@ -23,14 +23,125 @@ a {
 /* CABEÇALHO */
 #header {
     background-color: #296B45;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.itemImagem img {
+    width: 220px;
+}
+
+.item {
+    font: 500 2.3vh 'Montserrat', sans-serif;
+}
+
+.item a {
+    color: #fff;
+}
+
+/* CONTEÚDO */
+.fundo{
+    background: url(img/imgCardapio.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    margin: 100px 150px;
+}
+
+h1 {
+    color: #fff;
+    font: 500 7.5vh 'Limelight', sans-serif;
+}
+
+.navTudo {
+    margin: 0 20%;
+    position: sticky;
+    top: 100px;
+    bottom: 0;
+    z-index: 1000;
 }
 
 .navegacao {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 8px;
+    background-color: #296B45;
+    margin-top: 40px;
+    border-radius: 16.5px;
 }
 
-.itemImagem img {
-    width: 250px;
+.navegacao a {
+    font: 500 2.8vh 'Limelight', sans-serif;
+    color: #fff;
+    margin: 8px 20px;
+}
+
+
+h3 {
+    font: 400 35px 'Limelight', sans-serif;
+}
+
+h5 {
+    color: #fff;
+    font: 400 23px 'Limelight', sans-serif;
+    margin-top: 40px;
+}
+
+p {
+    color: #fff;
+    font: 500 1.6vh 'Montserrat', sans-serif;
+}
+
+span {
+    font-weight: bold;
+}
+
+.todosSaboresPrim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.todosSabores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 40px 20px;
+    margin: 0 110px;
+}
+
+.textoSabores {
+    position: absolute;
+    margin-left: 30px;
+    width: 220px;
+}
+
+.imgSabores img {
+    border-radius: 16.5px;
+}
+
+.todosSabores .imgSabores img {
+    width: 270px;
+}
+
+.todosSaboresPrim .imgSabores img {
+    width: 350px;
 }
