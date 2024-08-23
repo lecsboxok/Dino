@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* FONTES */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Limelight';
+    src: url(fonts/Limelight/Limelight-Regular.ttf);
+}
+
+footer{
+    background-color: #BF0B20;
+    color: white;
+    margin-top: 160px;
+}
+
+.colunas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+span{
+    font: 600 16px 'Montserrat', sans-serif;
+}
+
+.titulo{
+    font: 600 17px 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.texto{
+    font: 400 14px 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    margin-top: 7px;
+}
+
+.textoFinal{
+    font: 300 13px 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.logoIMG{
+    width: 250px;
+}
+
+.funcionamento{
+    margin-top: 100px;
+}
+
+.horarios{
+    margin-top: 10px;
+}
+
+.nossasPizzas, .unidade, .redes{
+    margin-top: 50px;
+}
+
+.pizzas{
+    display: flex;
+    flex-direction: row;
+}
+
+.parte2{
+    margin-left: 65px;
+}
+
+.home, .contato{
+    margin-top: 28px;
+}
+
+.imagensRedes{
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.redesIMG{
+    width: 30px;
+    margin-right: 8px;
+}
+
+.redesIMG:hover{
+    transition: 0.5s;
+    width: 36px;
+    filter: brightness(50%);
+}
+
+.unidade{
+    width: 65%;
+}
+
+.linha {
+    height: 0.5px;
+    background-color: white;
+}
+
+.final {
+    text-align: center;
+    padding: 17px 0;
+}
