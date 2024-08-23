@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#header {
+    background-color: #296B45;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itemImagem img {
+    width: 250px;
+}
