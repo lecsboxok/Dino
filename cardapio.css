@@ -25,7 +25,7 @@ a {
     background-color: #296B45;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
 }
 
 .cabecalho {
@@ -60,7 +60,11 @@ a {
 }
 
 .section {
-    margin: 100px 150px;
+    margin: 0 150px;
+}
+
+.section {
+    padding-top: 170px;
 }
 
 h1 {
@@ -73,7 +77,7 @@ h1 {
     position: sticky;
     top: 100px;
     bottom: 0;
-    z-index: 1000;
+    z-index: 80;
 }
 
 .navegacao {
@@ -99,8 +103,9 @@ h3 {
 
 h5 {
     color: #fff;
-    font: 400 23px 'Limelight', sans-serif;
+    font: 700 23px 'Montserrat', sans-serif;
     margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -119,19 +124,53 @@ span {
     margin: 0 40px;
 }
 
-.todosSabores {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    justify-content: center;
-    grid-gap: 40px 20px;
-    margin: 0 110px;
+.todosSabores1, .todosSabores2, .todosSabores3, .todosSaboresPrim {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#coberturas .todasCoberturas {
+    display: flex;
+}
+
+#coberturas .todasCoberturas .tiposSabores {
+    margin: 10px;
+}
+
+.doisTipos {
+    margin: 30px 20px;
+}
+
+#coberturas h5 {
+    height: 30px;
 }
 
 .textoSabores {
     position: absolute;
     margin-left: 30px;
     width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textoSabores2 {
+    position: absolute;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.baixo {
+    margin-top: 220px;
+}
+
+.baixoCob {
+    margin-top: 150px;
+}
+
+.tamanho {
+    height: 80px;
 }
 
 .imgSabores img {
@@ -144,4 +183,99 @@ span {
 
 .todosSaboresPrim .imgSabores img {
     width: 350px;
+}
+
+footer{
+    background-color: #BF0B20;
+    color: white;
+    margin-top: 160px;
+}
+
+.colunas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+footer span{
+    font: 600 16px 'Montserrat', sans-serif;
+}
+
+.titulo{
+    font: 600 17px 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.texto{
+    font: 400 14px 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    margin-top: 7px;
+}
+
+.textoFinal{
+    font: 300 13px 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.logoIMG{
+    width: 250px;
+}
+
+.funcionamento{
+    margin-top: 100px;
+}
+
+.horarios{
+    margin-top: 10px;
+}
+
+.nossasPizzas, .unidade, .redes{
+    margin-top: 50px;
+}
+
+.pizzas{
+    display: flex;
+    flex-direction: row;
+}
+
+.parte2{
+    margin-left: 65px;
+}
+
+.home, .contato{
+    margin-top: 28px;
+}
+
+.imagensRedes{
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.redesIMG{
+    width: 30px;
+    margin-right: 8px;
+}
+
+.redesIMG:hover{
+    transition: 0.5s;
+    width: 36px;
+    filter: brightness(50%);
+}
+
+.unidade{
+    width: 65%;
+}
+
+.linha {
+    height: 0.5px;
+    background-color: white;
+}
+
+.final {
+    text-align: center;
+    padding: 17px 0;
 }
