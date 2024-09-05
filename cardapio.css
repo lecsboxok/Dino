@@ -60,7 +60,7 @@ a {
 }
 
 .section {
-    margin: 0 150px;
+    margin: 0 130px;
 }
 
 .section {
@@ -128,10 +128,13 @@ span {
     display: flex;
     justify-content: space-between;
     margin: 10px;
+    flex-wrap: wrap;
+    flex-grow: 4;
 }
 
 #coberturas .todasCoberturas {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #coberturas .todasCoberturas .tiposSabores {
@@ -139,7 +142,7 @@ span {
 }
 
 .doisTipos {
-    margin: 30px 20px;
+    margin: 30px 10px;
 }
 
 #coberturas h5 {
