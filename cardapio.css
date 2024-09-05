@@ -196,6 +196,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding: 80px;
+    flex-wrap: wrap;
 }
 
 footer span{

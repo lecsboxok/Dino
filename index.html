@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino's Tomato Pie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/pizzaLogo.png">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
             <img src="img/principalIndex.png" alt="Imagem da pizza">
         </div>
         <div class="container">
-            <div class="sobreNos">
+            <div class="sobreNos fade-in">
                 <p class="tituloIndex">SOBRE <span>NÓS</span></p>
                 <div class="sobreGeral">
                     <div class="beneficios">
@@ -51,7 +52,7 @@
                 </div>
             </div>
 
-            <section id="destaques">
+            <section id="destaques" class="fade-in">
                 <div class="nossosDestaques">
                     <p class="tituloIndex">NOSSOS <span>DESTAQUES</span></p>
                     <div class="destaques-grid">
@@ -73,7 +74,7 @@
                 </div>
             </section>
         </div>
-        <section id="cardapio">
+        <section id="cardapio" class="fade-in">
             <div class="cardapio">
                 <p class="titulo-cardapio">CARDÁPIO</p>
                 <p class="texto-cardapio">Veja a variedade de comidas no nosso cardápio</p>
@@ -81,29 +82,48 @@
             </div>
         </section>
 
-        <div class="container">
-            <section id="delivery">
-                <div class="deliveryEretirada">
-                    <div class="textos-delivery">
-                        <div class="delivery">
-                            <p class="titulo-cardapio titulo-delivery">DELIVERY</p>
-                            <p class="texto-delivery">Peça sua comida e receba ela no conforto de sua casa</p>
-                            <button class="peca">Peça aqui</button>
-                        </div>
-                        <div class="delivery">
-                            <p class="titulo-cardapio titulo-delivery">RETIRADA</p>
-                            <p class="texto-delivery">O serviço mais rápido de atendimento, peça em casa e retire na nossa unidade</p>
-                            <button class="peca">Peça aqui</button>
-                        </div>
+
+        <section id="delivery" class="fade-in">
+            <div class="deliveryEretirada">
+                <div class="textos-delivery">
+                    <div class="delivery">
+                        <p class="titulo-cardapio titulo-delivery">DELIVERY</p>
+                        <p class="texto-delivery">Peça sua comida e receba ela no conforto de sua casa</p>
+                        <button class="peca">Peça aqui</button>
                     </div>
-                    <div class="imagem-delivery">
-                        <img src="img/deliveryRetirada.png" alt="motoqueiro com caixas">
+                    <div class="delivery">
+                        <p class="titulo-cardapio titulo-delivery">RETIRADA</p>
+                        <p class="texto-delivery">O serviço mais rápido de atendimento, peça em casa e retire na
+                            nossa unidade</p>
+                        <button class="peca">Peça aqui</button>
                     </div>
                 </div>
-            </section>
-        </div>
+                <div class="imagem-delivery">
+                    <img src="img/deliveryRetirada.png" alt="motoqueiro com caixas">
+                </div>
+            </div>
+        </section>
 
 
+        <section id="conheca" class="fade-in">
+            <div class="conheca">
+                <p class="tituloIndex">CONHEÇA NOSSA <span>CASA</span></p>
+                <div class="img-conheca">
+                    <img src="img/conheca1.png" alt="Dino's">
+                    <img src="img/conheca2.png" alt="Dino's">
+                </div>
+                <p class="texto-maiores">Apenas para maiores de 21 anos</p>
+
+                <div class="rua-conheca">
+                    <p class="texto-rua">1524 E Olive Wy, Seattle, WA 98122, Estados Unidos</p>
+                </div>
+                <div class="funcionamento-conheca">
+                    <p class="texto-func">Terça, Quarta e Domingo - 16h ás 0h</p>
+                    <p class="texto-func">Quinta, Sexta e Sabádo - 16h ás 02h</p>
+                    <p class="texto-func">Segunda - Fechado</p>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer id="footer">
@@ -175,6 +195,25 @@
             <p class="textoFinal">© 2024 Dino’s Tomato Pie - Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        function animateOnScroll() {
+            const elementos = document.querySelectorAll('.fade-in');
+
+            elementos.forEach(elemento => {
+                const posicaoElemento = elemento.getBoundingClientRect().top;
+                const tamanhoTela = window.innerHeight;
+
+                if (posicaoElemento < tamanhoTela - 200) {
+                    elemento.classList.add('aparecer');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+
+    </script>
+
 </body>
 
 </html>

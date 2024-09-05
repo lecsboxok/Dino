@@ -61,7 +61,7 @@ a {
     font: 500 34px 'Limelight', sans-serif;
 }
 
-.sobreNos span{
+.sobreNos span, .conheca span{
     color: #296B45;
 }
 
@@ -102,6 +102,7 @@ a {
     margin-top: 80px;
 }
 
+
 .destaques-separado {
     display: flex;
     flex-direction: column;
@@ -112,6 +113,8 @@ a {
     flex-direction: row;
     margin-top: 80px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 #destaques {
@@ -120,17 +123,18 @@ a {
 
 .destaque-item {
     position: relative;
+    margin: 20px 0;
 }
 
 .destaque-item img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
 .destaque-item h3 {
     position: absolute;
     bottom: 3%;
-    right: 10%;
+    right: 7%;
     transform: translate(-50%, -50%);
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -147,6 +151,7 @@ a {
     background-size: cover;
     background-position: center;
     height: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -175,6 +180,26 @@ a {
     cursor: pointer;
 }
 
+.button-cardapio, .peca {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.beneficios, .destaque-item{
+    transition:  transform 0.3s ease;
+}
+
+.beneficios:hover{
+    transform: scale(1.15);
+}
+
+.destaque-item:hover{
+    transform: scale(1.05);
+}
+
+.button-cardapio:hover, .peca:hover {
+    transform: scale(1.05);
+}
+
 .titulo-delivery{
     color: #BF0B20;
 }
@@ -182,6 +207,7 @@ a {
 .deliveryEretirada{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -195,6 +221,10 @@ a {
     text-align: center;
 }
 
+.imagem-delivery img{
+    width: 70%;
+}
+
 .peca {
     font: 600 18px 'Montserrat', sans-serif;
     margin-top: 35px;
@@ -205,12 +235,66 @@ a {
     cursor: pointer;
 }
 
+#conheca{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.img-conheca{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-conheca img{
+    margin: 0 40px;
+}
+
+.texto-maiores{
+    font: 500 17px 'Montserrat', sans-serif;
+    margin-top: 25px;
+}
+
+.conheca{
+    margin: 130px 0 140px 0;
+}
+
+.funcionamento-conheca{
+    margin-top: 30px;
+}
+
+.texto-rua{
+    font: 700 18px 'Montserrat', sans-serif;
+    margin-top: 80px;
+}
+
+.texto-func{
+    font: 500 18px 'Montserrat', sans-serif;
+    margin: 8px 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* RODAPE */
 footer{
     background-color: #BF0B20;
     color: white;
-    margin-top: 160px;
 }
 
 .colunas{
@@ -218,6 +302,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding: 80px;
+    flex-wrap: wrap;
 }
 
 .horarios span{
@@ -306,6 +391,186 @@ footer{
 
 @media screen and (max-width: 768px){
     main{
-        padding-top: 50px;
+        padding-top: 140px;
+    }
+
+    .container{
+        margin: 0px 80px;
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itemImagem {
+        order: -1;
+    }
+    
+    .itemImagem img {
+        width: 200px; 
+        margin-bottom: 20px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 3vw;
+        margin: 5px 0;
+        width: 100%;
+        border-top: #dcdcdc solid 1px;
+        padding-top: 10px;
+    }
+
+    .sobreGeral {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .beneficios {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .destaque-item {
+        margin: 35px 0 0 0;
+    }
+
+    .titulo-cardapio{
+        font: 500 33px 'Limelight', sans-serif;
+    }
+
+    .texto-cardapio {
+        font: 600 15px 'Montserrat', sans-serif;
+        margin: 10px 40px 0 40px;
+        text-align: center;
+    }
+    
+    .button-cardapio {
+        font: 600 14px 'Montserrat', sans-serif;
+    }
+    
+    .texto-delivery {
+        font: 600 16px 'Montserrat', sans-serif;
+        margin: 20px 0;
+    }
+    
+    .peca {
+        font: 600 16px 'Montserrat', sans-serif;
+        margin-top: 20px;
+    }
+
+    .sobreNos{
+        margin-top: 130px;
+    }
+
+    #destaques {
+        margin-top: 130px;
+    }
+
+    .imagem-delivery img{
+        width: 70%;
+    }
+
+    .imagem-delivery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+    }
+    
+    .img-conheca{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .img-conheca img{
+        margin: 30px 0;
+        width: 70%;
+    }
+    
+    .texto-maiores{
+        margin-top: 8px;
+    }
+    
+    .funcionamento-conheca{
+        margin-top: 30px;
+    }
+    
+    .texto-rua{
+        font: 700 18px 'Montserrat', sans-serif;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .rua-conheca{
+        margin: 0 35px;
+    }
+    
+    .texto-func{
+        font: 500 18px 'Montserrat', sans-serif;
+        margin: 8px 0;
+    }
+
+    .colunas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    .destaque-item h3 {
+        position: absolute;
+        bottom: 3%;
+        right: 7%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        font: 700 20px 'Montserrat', sans-serif;
+    }
+
+}
+
+@media screen and (max-width: 1115px){
+    .item {
+        font: 500 1.7vh 'Montserrat', sans-serif;
+    }
+
+    .img-conheca{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .img-conheca img{
+        margin: 30px 0;
+        width: 70%;
+    }
+
+    .deliveryEretirada{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagem-delivery img{
+        width: 70%;
+    }
+
+    .imagem-delivery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
     }
 }
