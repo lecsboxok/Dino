@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino's Pizzaria</title>
+    <title>Dino's Tomato Pie</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header id="header">
+        <div class="cabecalho">
+            <div class="item">
+                <a href="">CARDÁPIO</a>
+            </div>
+            <div class="itemImagem">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="">PEÇA PELO APP</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="inicio">
+            <img src="img/principalIndex.png" alt="Imagem da pizza">
+        </div>
+        <div class="container">
+            <div class="sobreNos">
+                <p class="tituloIndex">SOBRE <span>NÓS</span></p>
+                <div class="sobreGeral">
+                    <div class="beneficios">
+                        <img src="img/diversao.png" alt="Carinha sorrindo">
+                        <p class="titulo-menor">Diversão</p>
+                        <p class="texto-sobre">Se você quer se divertir com seus amigos e familiares, o Dino's é o lugar
+                            certo para você</p>
+                    </div>
+                    <div class="beneficios">
+                        <img src="img/bomCardapio.png" alt="icon de chef">
+                        <p class="titulo-menor">Bom cardápio</p>
+                        <p class="texto-sobre">Temos uma grande variedade de pizzas, saladas e bebidas. Além da
+                            novidade: Nó de alho.</p>
+                    </div>
+                    <div class="beneficios">
+                        <img src="img/delivery.png" alt="homem segurando caixa">
+                        <p class="titulo-menor">Delivery</p>
+                        <p class="texto-sobre">Prezamos pelo conforto do nosso cliente, por isso temos o sistema de
+                            entrega e retirada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="destaques">
+                <div class="nossosDestaques">
+                    <p class="tituloIndex">NOSSOS <span>DESTAQUES</span></p>
+                    <div class="destaques-grid">
+                        <div class="destaque-item">
+                            <img src="img/pizzas.png" alt="Pizza">
+                            <h3>Pizzas</h3>
+                        </div>
+                        <div class="destaque-separado">
+                            <div class="destaque-item">
+                                <img src="img/saladaIndex.png" alt="Salada">
+                                <h3>Salada</h3>
+                            </div>
+                            <div class="destaque-item">
+                                <img src="img/noDeAlho.png" alt="Nó de Alho">
+                                <h3>Nó de Alho</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="cardapio">
+            <div class="cardapio">
+                <p class="titulo-cardapio">CARDÁPIO</p>
+                <p class="texto-cardapio">Veja a variedade de comidas no nosso cardápio</p>
+                <button class="button-cardapio" onclick="window.location.href='cardapio.html'">Veja o cardápio</button>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="delivery">
+                <div class="deliveryEretirada">
+                    <div class="textos-delivery">
+                        <div class="delivery">
+                            <p class="titulo-cardapio titulo-delivery">DELIVERY</p>
+                            <p class="texto-delivery">Peça sua comida e receba ela no conforto de sua casa</p>
+                            <button class="peca">Peça aqui</button>
+                        </div>
+                        <div class="delivery">
+                            <p class="titulo-cardapio titulo-delivery">RETIRADA</p>
+                            <p class="texto-delivery">O serviço mais rápido de atendimento, peça em casa e retire na nossa unidade</p>
+                            <button class="peca">Peça aqui</button>
+                        </div>
+                    </div>
+                    <div class="imagem-delivery">
+                        <img src="img/deliveryRetirada.png" alt="motoqueiro com caixas">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+    </main>
+    <footer id="footer">
+        <div class="colunas">
+            <div class="coluna1">
+                <a href="#header">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo" class="logoIMG">
+                    </div>
+                </a>
+                <div class="funcionamento">
+                    <p class="titulo">FUNCIONAMENTO</p>
+                    <div class="horarios">
+                        <p class="texto">Terça, Quarta e Domingo <span>- 16h ás 2h</span></p>
+                        <p class="texto">Quinta, Sexta e Sabádo <span>- 16h ás 0h</span></p>
+                        <p class="texto">Segunda <span>- FECHADO</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="coluna2">
+                <a href="#header">
+                    <div class="home">
+                        <p class="titulo">HOME</p>
+                    </div>
+                </a>
+                <div class="nossasPizzas">
+                    <p class="titulo">NOSSAS PIZZAS</p>
+                    <div class="pizzas">
+                        <div class="parte1">
+                            <p class="texto">Queijo</p>
+                            <p class="texto">Pepperoni</p>
+                            <p class="texto">Clássica</p>
+                            <p class="texto">Mr. Pink</p>
+                            <p class="texto">Brócolis e Limão</p>
+                        </div>
+                        <div class="parte2">
+                            <p class="texto">Torta Branca</p>
+                            <p class="texto">Salame Picante</p>
+                            <p class="texto">Bacon e Cebola</p>
+                            <p class="texto">Fim de Semana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coluna3">
+                <div class="contato">
+                    <p class="titulo">CONTATO</p>
+                    <p class="texto">dinostomatopie@gmail.com</p>
+                </div>
+                <div class="unidade">
+                    <p class="titulo">UNIDADE</p>
+                    <p class="texto">1524 E Olive Wy, Seattle, WA 98122, Estados Unidos</p>
+                </div>
+                <div class="redes">
+                    <p class="titulo">REDES SOCIAIS</p>
+                    <div class="imagensRedes">
+                        <a href="https://www.facebook.com/Dinostomatopie/"><img src="img/facebook.png" alt="facebook"
+                                class="redesIMG"></a>
+                        <a href="https://www.instagram.com/dinosseattle/"><img src="img/instagram.png" alt="instagram"
+                                class="redesIMG"></a>
+                        <a href="https://twitter.com/dinostomatopie"><img src="img/twitter.png" alt="twitter"
+                                class="redesIMG"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="linha"></div>
+        <div class="final">
+            <p class="textoFinal">© 2024 Dino’s Tomato Pie - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

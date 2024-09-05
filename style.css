@@ -8,6 +8,7 @@
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 /* FONTES */
 @font-face {
@@ -18,4 +19,293 @@ a {
 @font-face {
     font-family: 'Limelight';
     src: url(fonts/Limelight/Limelight-Regular.ttf);
+}
+
+/* CABEÇALHO */
+#header {
+    background-color: #296B45;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.itemImagem img {
+    width: 220px;
+}
+
+.item {
+    font: 500 2.3vh 'Montserrat', sans-serif;
+}
+
+.item a {
+    color: #fff;
+}
+
+/* CONTEUDO */
+.inicio img{
+    width: 100%;
+}
+
+.container{
+    margin: 150px 180px 0 180px;
+}
+
+.tituloIndex{
+    font: 500 34px 'Limelight', sans-serif;
+}
+
+.sobreNos span{
+    color: #296B45;
+}
+
+.nossosDestaques span{
+    color: #BF0B20;
+}
+
+.sobreGeral{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+}
+
+.titulo-menor{
+    font: 800 20px 'Montserrat', sans-serif;
+    color: #3f3f3f;
+    margin-top: 16px;
+}
+
+.texto-sobre{
+    font: 400 18px 'Montserrat', sans-serif;
+    color: #3f3f3f;
+    margin-top: 16px;
+}
+
+.nossosDestaques {
+    margin-top: 80px;
+}
+
+.destaques-separado {
+    display: flex;
+    flex-direction: column;
+}
+
+.destaques-grid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+#destaques {
+    margin-top: 180px;
+}
+
+.destaque-item {
+    position: relative;
+}
+
+.destaque-item img {
+    width: 100%;
+    height: auto;
+}
+
+.destaque-item h3 {
+    position: absolute;
+    bottom: 3%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font: 700 30px 'Montserrat', sans-serif;
+}
+
+#cardapio {
+    margin-top: 180px;
+}
+
+.cardapio {
+    background-image: url('img/cardapioIndex.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo-cardapio{
+    margin-top: 100px;
+    font: 500 43px 'Limelight', sans-serif;
+    color: #fff;
+}
+
+.texto-cardapio {
+    color: white;
+    margin-top: 10px;
+    font: 600 20px 'Montserrat', sans-serif;
+}
+
+.button-cardapio {
+    font: 600 20px 'Montserrat', sans-serif;
+    margin-top: 35px;
+    padding: 8px 50px;
+    color: white;
+    background-color: #296B45;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.titulo-delivery{
+    color: #BF0B20;
+}
+
+.deliveryEretirada{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-delivery {
+    font: 600 20px 'Montserrat', sans-serif;
+    margin: 20px 20%;
+}
+
+.delivery{
+    text-align: center;
+}
+
+.peca {
+    font: 600 18px 'Montserrat', sans-serif;
+    margin-top: 35px;
+    padding: 8px 50px;
+    color: white;
+    background-color: #BF0B20;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+/* RODAPE */
+footer{
+    background-color: #BF0B20;
+    color: white;
+    margin-top: 160px;
+}
+
+.colunas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.horarios span{
+    font: 600 16px 'Montserrat', sans-serif;
+}
+
+.titulo{
+    font: 600 17px 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.texto{
+    font: 400 14px 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    margin-top: 7px;
+}
+
+.textoFinal{
+    font: 300 13px 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.logoIMG{
+    width: 250px;
+}
+
+.funcionamento{
+    margin-top: 100px;
+}
+
+.horarios{
+    margin-top: 10px;
+}
+
+.nossasPizzas, .unidade, .redes{
+    margin-top: 50px;
+}
+
+.pizzas{
+    display: flex;
+    flex-direction: row;
+}
+
+.parte2{
+    margin-left: 65px;
+}
+
+.home, .contato{
+    margin-top: 28px;
+}
+
+.imagensRedes{
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.redesIMG{
+    width: 30px;
+    margin-right: 8px;
+}
+
+.redesIMG:hover{
+    transition: 0.5s;
+    width: 36px;
+    filter: brightness(50%);
+}
+
+.unidade{
+    width: 65%;
+}
+
+.linha {
+    height: 0.5px;
+    background-color: white;
+}
+
+.final {
+    text-align: center;
+    padding: 17px 0;
+}
+
+
+
+@media screen and (max-width: 768px){
+    main{
+        padding-top: 50px;
+    }
 }
