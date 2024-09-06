@@ -65,7 +65,7 @@ html {
 }
 
 .container {
-    margin: 0 150px;
+    margin: 0 110px;
     padding-top: 170px;
 }
 
@@ -120,17 +120,14 @@ span {
 
 .todosSaboresPrim {
     display: flex;
-    align-items: center;
-    margin: 0 40px;
     justify-content: space-between;
 }
 
-.todosSabores1, .todosSabores2, .todosSabores3, .todosSaboresPrim {
+.todosSabores, .todosSaboresPrim {
     display: flex;
     justify-content: flex-start;
     margin: 10px;
     flex-wrap: wrap;
-    flex-grow: 4;
 }
 
 #pizzas .tiposSabores {
@@ -139,11 +136,20 @@ span {
 
 #coberturas .todasCoberturas {
     display: flex;
-    flex-wrap: wrap;
+}
+
+#fatias .tiposSabores {
+    align-items: center;
+    margin: 0 20px;
 }
 
 #coberturas .todasCoberturas .tiposSabores {
     margin: 10px;
+}
+
+#coberturas .todasCoberturas {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #coberturas .imgSabores img {
@@ -293,4 +299,20 @@ footer span{
 .final {
     text-align: center;
     padding: 17px 0;
+}
+
+@media screen and (max-width: 1360px){ 
+
+    .todosSabores1, .todosSabores2, .todosSabores3, .todosSaboresPrim {
+        flex-wrap: wrap;
+    }
+
+    #coberturas .todasCoberturas {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        margin: 0 80px;
+        padding-top: 170px;
+    }
 }
