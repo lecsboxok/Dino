@@ -72,6 +72,8 @@ html {
 h1 {
     color: #fff;
     font: 500 7.5vh 'Limelight', sans-serif;
+    animation: fadeInUp;
+    animation-duration: 2s;
 }
 
 .navTudo {
