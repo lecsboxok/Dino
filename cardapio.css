@@ -9,6 +9,11 @@
 a {
     text-decoration: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+  
 /* FONTES */
 @font-face {
     font-family: 'Montserrat';
@@ -59,11 +64,8 @@ a {
     justify-content: center;
 }
 
-.section {
-    margin: 0 130px;
-}
-
-.section {
+.container {
+    margin: 0 150px;
     padding-top: 170px;
 }
 
@@ -96,7 +98,6 @@ h1 {
     margin: 8px 20px;
 }
 
-
 h3 {
     font: 400 35px 'Limelight', sans-serif;
 }
@@ -120,16 +121,20 @@ span {
 .todosSaboresPrim {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: 0 40px;
+    justify-content: space-between;
 }
 
 .todosSabores1, .todosSabores2, .todosSabores3, .todosSaboresPrim {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 10px;
     flex-wrap: wrap;
     flex-grow: 4;
+}
+
+#pizzas .tiposSabores {
+    margin: 0 10px;
 }
 
 #coberturas .todasCoberturas {
@@ -139,6 +144,10 @@ span {
 
 #coberturas .todasCoberturas .tiposSabores {
     margin: 10px;
+}
+
+#coberturas .imgSabores img {
+    width: 270px;
 }
 
 .doisTipos {
@@ -187,6 +196,8 @@ span {
 .todosSaboresPrim .imgSabores img {
     width: 350px;
 }
+
+/* RODAPÉ */
 
 footer{
     background-color: #BF0B20;
